@@ -1,0 +1,63 @@
+ul,li{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#turn{
+	overflow: hidden;
+	position: relative;
+}
+#turn .moving_wrap{
+	position: relative;
+	left: -100%;
+	z-index: 0;
+}
+#turn .moving_wrap .det{
+	float: left;
+}
+#turn .moving_wrap .det .det_in{
+	display: block;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+#turn .controller{
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	height:30px;
+	margin-top: -15px;
+}
+#turn .prev{
+	position: absolute;
+	top: 50%;
+	left: 0;
+	z-index: 9999;
+}
+#turn .next{
+	position: absolute;
+	top: 50%;
+	right: 0;
+	z-index: 9999;
+}
+#turn .prev,
+#turn .next{
+	background: rgba(0,0,0,0.5);
+	height: 30px;
+	width: 30px;
+	cursor: pointer;
+	margin-top: -15px;
+	z-index: 10;
+}
+#turn .prev img,
+#turn .next img{
+	height: 100%;
+	width: 100%;
+}
+.cl:after{
+	content: "";
+	display: block;
+	clear: both;
+	visibility: hidden;
+}
